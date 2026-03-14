@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You Are A Liar</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#000000,#1a0000);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    font-size:80px;
+    color:#ff0000;
+    letter-spacing:5px;
+    text-shadow:
+        0 0 10px red,
+        0 0 20px red,
+        0 0 40px darkred;
+    animation:glow 2s infinite alternate;
+}
+
+p{
+    color:white;
+    font-size:18px;
+    margin-top:20px;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px red,0 0 20px red;
+    }
+    to{
+        text-shadow:0 0 30px red,0 0 60px darkred;
+    }
+}
+
+button{
+    margin-top:30px;
+    padding:12px 25px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    background:red;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkred;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>YOU ARE A LIAR</h1>
+    <p>The truth always comes out eventually.</p>
+
+    <button onclick="alert('Truth Revealed!')">
+        Reveal Truth
+    </button>
+</div>
+
+</body>
+</html>
